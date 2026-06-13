@@ -1,0 +1,680 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hafiz Muhammad Adan | Frontend Web Developer</title>
+
+    <meta name="description"
+        content="Hafiz Muhammad Adan - Frontend Developer in Pakistan specializing in responsive websites, modern UI design, and SEO optimized web applications.">
+    <meta name="keywords"
+        content="Hafiz Muhammad Adan, Frontend Developer Pakistan, HTML CSS Developer, JavaScript Developer, Developer Portfolio">
+    <meta name="author" content="Hafiz Muhammad Adan">
+    <meta name="robots" content="index, follow">
+
+    <link rel="canonical" href="https://adandev.is-a.dev/">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Hafiz Muhammad Adan | Web Developer Portfolio">
+    <meta property="og:description"
+        content="Developer portfolio website showcasing web development projects, skills, and expertise.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://adandev.is-a.dev/assets/preview.png">
+    <meta property="og:url" content="https://adandev.is-a.dev/">
+    <meta property="og:site_name" content="Hafiz Muhammad Adan Portfolio">
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/res.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/adans-tech.png" />
+
+    <!-- Scripts -->
+
+    <script src="pages/subscribe.js" defer></script>
+    <script src="pages/darkmode.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <!-- new google verification link -->
+    <meta name="google-site-verification" content="hNazPRCz4u-AdteXrplm6MWTD_audlEYEwfwZpZH9ko" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left" id="logoBox">
+                <img src="assets/Portfolio's logo.png" alt="Logo" class="logo" loading="lazy" />
+                <span class="dev-logo">Adan dev<svg xmlns="http://w3.org" width="34" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="6 6 1 12 6 18"></polyline>
+                        <line x1="11" y1="19" x2="13" y2="5"></line>
+                        <polyline points="18 18 23 12 18 6"></polyline>
+                    </svg>
+                </span>
+            </div>
+
+            <button class="hamburger" aria-label="Menu">☰</button>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutMe">About Me</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contactMe">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <button id="theme-switch">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                <path
+                    d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                <path
+                    d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+            </svg>
+        </button>
+    </header>
+
+    <main>
+        <section class="firstsection" id="home">
+            <div class="leftsection">
+                Hi! My name is
+                <div><span class="purple">Hafiz Muhammad Adan</span></div>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">
+                        <a href="https://my-personal-dev-resume.vercel.app/" target="_blank">Download Resume</a>
+                    </button>
+                    <button class="btn"><a href="#contactMe">Contact Me</a></button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="./assets/about-me.jpeg" alt="background image" />
+            </div>
+        </section>
+        <hr />
+        <!-- Infinite Scroll Tech Stack -->
+        <div class="marquee-container">
+            <div class="marquee">
+                <div class="tech-card"><i class="fab fa-html5"></i></div>
+                <div class="tech-card"><i class="fab fa-css3-alt"></i></div>
+                <div class="tech-card"><i class="fab fa-js"></i></div>
+                <div class="tech-card"><i class="fab fa-react"></i></div>
+                <div class="tech-card"><i class="fab fa-node-js"></i></div>
+                <div class="tech-card"><i class="fab fa-python"></i></div>
+                <div class="tech-card"><i class="fab fa-git-alt"></i></div>
+                <div class="tech-card"><i class="fab fa-html5"></i></div>
+                <div class="tech-card"><i class="fab fa-css3-alt"></i></div>
+                <div class="tech-card"><i class="fab fa-js"></i></div>
+                <div class="tech-card"><i class="fab fa-react"></i></div>
+                <div class="tech-card"><i class="fab fa-node-js"></i></div>
+                <div class="tech-card"><i class="fab fa-python"></i></div>
+                <div class="tech-card"><i class="fab fa-git-alt"></i></div>
+                <!-- duplicate -->
+                <div class="tech-card"><i class="fab fa-html5"></i></div>
+                <div class="tech-card"><i class="fab fa-css3-alt"></i></div>
+                <div class="tech-card"><i class="fab fa-js"></i></div>
+                <div class="tech-card"><i class="fab fa-react"></i></div>
+                <div class="tech-card"><i class="fab fa-node-js"></i></div>
+                <div class="tech-card"><i class="fab fa-python"></i></div>
+                <div class="tech-card"><i class="fab fa-git-alt"></i></div>
+                <div class="tech-card"><i class="fab fa-html5"></i></div>
+                <div class="tech-card"><i class="fab fa-css3-alt"></i></div>
+                <div class="tech-card"><i class="fab fa-js"></i></div>
+                <div class="tech-card"><i class="fab fa-react"></i></div>
+                <div class="tech-card"><i class="fab fa-node-js"></i></div>
+                <div class="tech-card"><i class="fab fa-python"></i></div>
+                <div class="tech-card"><i class="fab fa-git-alt"></i></div>
+            </div>
+        </div>
+
+        <hr />
+        <!-- about me section -->
+        <section class="about" id="aboutMe">
+            <div class="about-content">
+                <h2 class="heading">
+                    About <span style="color: blueviolet">Me</span>
+                </h2>
+                <h3>Frontend Developer</h3>
+                <p>
+                    I am Hafiz Muhammad Adan Suhail, a passionate Frontend Developer
+                    with expertise in HTML, CSS,a little bit of JavaScript,Java and SQL database system. I
+                    create visually appealing and user-friendly websites that provide
+                    seamless user experiences. With a keen eye for design and attention
+                    to detail, I strive to deliver high-quality code and innovative
+                    solutions. Let's collaborate to bring your ideas to life on the web!
+                </p>
+            </div>
+        </section>
+        <hr />
+
+        <!-- Section services -->
+        <section class="services" id="services">
+            <h2 class="heading">
+                My <span style="color: blueviolet">Services</span>
+            </h2>
+
+            <div class="services-container">
+                <div class="services-box">
+                    <i class="fa-solid fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>
+                        I build responsive and dynamic websites using HTML, CSS,
+                        JavaScript and other modern technologies according to client's
+                        needs.
+                    </p>
+                    <!-- <a href="#" class="service-btn">Read More</a> -->
+                </div>
+
+                <div class="services-box">
+                    <i class="fa-solid fa-video"></i>
+                    <h3>Video Editor</h3>
+                    <p>
+                        I edit and produce high-quality videos for various platforms and
+                        purposes according to client's needs.
+                    </p>
+                    <!-- <a href="#" class="service-btn">Read More</a> -->
+                </div>
+
+                <div class="services-box">
+                    <i class="fa-solid fa-compass-drafting"></i>
+                    <h3>Web Designer</h3>
+                    <p>
+                        I design beautiful and functional websites with a focus on user
+                        experience and aesthetics.
+                    </p>
+                    <!-- <a href="#" class="service-btn">Read More</a> -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience section -->
+        <section class="secondsection" id="experience">
+            <span class="text-gray">"What I have done so far"</span>
+            <h1>Work Experiences</h1>
+
+            <div class="box">
+                <div class="vertical-lines">
+                    <img class="image-top" src="assets/html.png" alt="" loading="lazy" />
+                    <div class="vertical-tittle">HTML Developer (2024-Present)</div>
+                    <div class="vertical-desc">
+                        "Learned HTML developement.(2024-Present)."
+                    </div>
+                </div>
+                <div class="vertical-lines">
+                    <img class="image-top" src="assets/java.png" alt="" loading="lazy" />
+                    <div class="vertical-tittle">java Developer (2025-present)</div>
+                    <div class="vertical-desc">
+                        "Learned java developement.(2025-Present)."
+                    </div>
+                </div>
+                <div class="vertical-lines">
+                    <img class="image-top" src="assets/seo.png" alt="" loading="lazy" />
+                    <div class="vertical-tittle">SEO Expert (2026-present)</div>
+                    <div class="vertical-desc">
+                        "Learned SEO techniques and best practices."
+                    </div>
+                </div>
+                <div class="vertical-lines">
+                    <img class="image-top" src="assets/front-end developer.png" alt="" loading="lazy" />
+                    <div class="vertical-tittle">Frontend Developer (2025-Present)</div>
+                    <div class="vertical-desc">
+                        "Learned frontend development and built multiple practical projects."
+                    </div>
+                </div>
+                <div class="vertical-lines">
+                    <img class="image-top" src="assets/sql.png" alt="" loading="lazy" />
+                    <div class="vertical-tittle">Database Administrator (2025-Present)</div>
+                    <div class="vertical-desc">
+                        "Learned database management and optimization techniques."
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr />
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <div class="projects-header-reveal">
+                    <h2 class="projects-title">
+                        My Latest
+                        <span>Projects</span>
+                    </h2>
+                    <p class="section-subtitle">Some of my recent and featured work.</p>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/tag-web.png" alt="Tag Web" />
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">HTML</span>
+                                <span class="tag">CSS</span>
+                                <span class="tag">Educational</span>
+                            </div>
+                            <h3 class="project-title">Tag Web</h3>
+                            <p class="project-desc">
+                                A clean and responsive website built to help students learn
+                                coding with clarity and simplicity.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://tag-web.netlify.app/" target="_blank" class="project-link"><i
+                                        class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/adansuhailch-cell/Tag-web.git" target="_blank"
+                                    class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project 3 -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/img-drg.png" alt="Imagine Dragons Fan Site" loading="lazy" />
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Fan Site</span>
+                                <span class="tag">Music</span>
+                                <span class="tag">Design</span>
+                            </div>
+                            <h3 class="project-title">Imagine Dragons Fan Site</h3>
+                            <p class="project-desc">
+                                A visually engaging fan website dedicated to Imagine Dragons
+                                with modern styling.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://imagine-dragons-fansite.netlify.app/" target="_blank"
+                                    class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/adansuhailch-cell/Imagine-Dragons-fansite.git"
+                                    target="_blank" class="project-link"><i class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/weather-forecast.png" alt="Adan's Weather Forecast" loading="lazy" />
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Weather App</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">API</span>
+                            </div>
+                            <h3 class="project-title">Adan's Weather Forecast</h3>
+                            <p class="project-desc">
+                                A responsive weather forecast application built with
+                                JavaScript and OpenWeatherMap API with the help of ChatGPT and
+                                also my efforts to make it more attractive and responsive.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://adan-weather-forecast.netlify.app/" target="_blank"
+                                    class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/adansuhailch-cell" target="_blank" class="project-link"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Project 6 -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/encoder.png" alt="Message Encoder" loading="lazy" />
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Fun Message Encoder</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Utility</span>
+                            </div>
+                            <h3 class="project-title">Adan's Message Encoder</h3>
+                            <p class="project-desc">
+                                A fun and useful message encoder/decoder tool built with
+                                JavaScript, Some help with ChatGPT and my interests to make
+                                such a Fun project for entertaining and education.
+                            </p>
+                            <div class="project-links">
+                                <a href="pages/mesg-converter.html" target="_blank" class="project-link"><i
+                                        class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/adansuhailch-cell" target="_blank" class="project-link"><i
+                                        class="fab fa-github"></i> Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="assets/Tic-tac.png" alt="Tic TAc Toe" loading="lazy" />
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Fun Game</span>
+                                <span class="tag">Music & Video</span>
+                                <span class="tag">Ultimate Fun</span>
+                            </div>
+                            <h3 class="project-title">Adan's Tic Tac Toe</h3>
+                            <p class="project-desc">
+                                A Funfull Game for Adan's Tech members to enjoy and pass their
+                                time with friends and family.Hope you like it.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://tic-tac-toe-pro-master.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="project-link"><i
+                                        class="fas fa-external-link-alt"></i> Live Demo</a>
+                                <a href="https://github.com/adansuhailch-cell/Tic_Tac-toe-game.git" target="_blank"
+                                    rel="noopener noreferrer" class="project-link"><i class="fab fa-github"></i>
+                                    Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- last project -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <img src="images/All-projects.png" alt="Some more projects" loading="lazy" />
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tags">
+                                <span class="tag">Fun</span>
+                                <span class="tag">Hardworking</span>
+                                <span class="tag">Modern AI</span>
+                            </div>
+                            <h3 class="project-title">All Projects</h3>
+                            <p class="project-desc">
+                                I build projects that reflect my passion for web development
+                                and modern AI. Each creation shows my dedication to learning,
+                                growing, and innovating. I aim to inspire new developers to
+                                dream big and turn ideas into reality.
+                            </p>
+                            <div class="project-links">
+                                <a href="pages/more-projects.html" target="_blank" class="project-link"><i
+                                        class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <!-- <section class="contact-section" id="contactMe">
+            <h2 class="heading">
+                Contact <span style="color: blueviolet">Me!</span>
+            </h2>
+            <form id="contactForm">
+                <div class="input-box">
+                    <input type="text" name="full_name" placeholder="Full Name" required />
+                    <input type="email" name="email" placeholder="Email Address" required />
+                </div>
+                <div class="input-box">
+                    <input type="number" name="phone" placeholder="Phone Number" required />
+                    <input type="text" name="subject" placeholder="Email Subject" required />
+                </div>
+                <div class="input-box">
+                    <textarea name="message" cols="30" rows="10" placeholder="Your Message to me..."
+                        required></textarea>
+                </div>
+                <input type="submit" value="Send Message" class="btn" />
+            </form>
+        </section> -->
+        <section class="contact-section" id="contactMe">
+            <h2 class="heading">
+                Contact <span style="color: blueviolet">Me!</span>
+            </h2>
+            <form id="contactForm" name="contact" method="POST" data-netlify="true">
+                <!-- Hidden input for Netlify -->
+                <input type="hidden" name="form-name" value="contact" />
+
+                <div class="input-box">
+                    <input type="text" name="full_name" placeholder="Full Name" required />
+                    <input type="email" name="email" placeholder="Email Address" required />
+                </div>
+                <div class="input-box">
+                    <input type="number" name="phone" placeholder="Phone Number" required />
+                    <input type="text" name="subject" placeholder="Email Subject" required />
+                </div>
+                <div class="input-box">
+                    <textarea name="message" cols="30" rows="10" placeholder="Your Message to me..."
+                        required></textarea>
+                </div>
+                <input type="submit" value="Send Message" class="btn" />
+            </form>
+        </section>
+        <!-- <section class="contact-section" id="contactMe">
+            <h2 class="heading">
+                Contact <span style="color: blueviolet">Me!</span>
+            </h2>
+
+            <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+
+                 Web3Forms Access Key 
+                <input type="hidden" name="access_key" value="3f4998bf-d656-439a-a78e-9e355c20e6ec" />
+
+                 Optional Subject 
+                <input type="hidden" name="subject" value="New Portfolio Message" />
+
+                 Spam Protection 
+                <input type="checkbox" name="botcheck" style="display: none;" />
+
+                <div class="input-box">
+                    <input type="text" name="full_name" placeholder="Full Name" required />
+
+                    <input type="email" name="email" placeholder="Email Address" required />
+                </div>
+
+                <div class="input-box">
+                    <input type="number" name="phone" placeholder="Phone Number" required />
+
+                    <input type="text" name="email_subject" placeholder="Email Subject" required />
+                </div>
+
+                <div class="input-box">
+                    <textarea name="message" cols="30" rows="10" placeholder="Your Message to me..."
+                        required></textarea>
+                </div>
+
+                <input type="submit" value="Send Message" class="btn" />
+            </form>
+        </section> -->
+
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-col-about">
+                <img src="assets/adan.png" alt="Adan" class="footer-avatar" loading="lazy" />
+                <h3>Hafiz Muhammad Adan</h3>
+                <p class="par">Web Developer • Frontend • Digital Marketer</p>
+                <p class="par">
+                    Creating clean, accessible and responsive web experiences.
+                </p>
+            </div>
+
+            <div class="footer-col links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contactMe">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-contact">
+                <h4>Contact</h4>
+                <p style="font-size: 13px" class="contact">Contact me via gmail</p>
+                <p class="small">
+                    ✉️
+                    <a href="mailto:adansuahilch@gmail.com" target="_blank">adansuahilch@gmail.com</a>
+                </p>
+                <br />
+                <h4>Follow</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/adansuhailch13/?__pwa=1#" target="_blank" aria-label="Instagram"
+                        class="icon"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://www.youtube.com/@Hafizadanadansuhail" target="_blank" aria-label="YouTube"
+                        class="icon"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://github.com/adansuhailch-cell" target="_blank" aria-label="GitHub" class="icon"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/adan-suahil-ch-5313b73a1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bt43Bq7vLRgq8yOS9%2BjAnCg%3D%3D"
+                        target="_blank" aria-label="LinkedIn" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://wa.me/923074449331?text=Hi%20Hafiz%20Adan%20Suhail%20i%20want%20to%20appreciate%20you%20and%20want%20a%20source%20code%20of%20%22...%22%20website"
+                        target="_blank" aria-label="whatsapp" class="icon"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© Hafiz Muhammad Adan. All rights reserved.</p>
+            <p class="muted small">Designed with HTML, CSS and a little JS</p>
+        </div>
+    </footer>
+
+    <!-- scrool reveal --><!-- ScrollReveal Library (FIRST) -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ScrollReveal Animations (SECOND) -->
+    <script>
+        // Final Ultra Upgrade 2025 - Optimized Cinematic Edition
+        const sr = ScrollReveal({
+            origin: "top",
+            distance: "25px",
+            duration: 900,
+            distance: "40px",
+            delay: 300,
+            reset: false,
+            opacity: 0,
+            scale: 0.95,
+            easing: "cubic-bezier(0.16, 1, 0.3, 1)",
+            mobile: false,
+            viewFactor: 0.15,
+        });
+
+        // --- HOME ---
+        sr.reveal(".leftsection", { origin: "left", distance: "80px" });
+        sr.reveal(".rightsection", {
+            origin: "right",
+            distance: "80px",
+            delay: 600,
+        });
+
+        // --- ABOUT ---
+        sr.reveal(".about-img", { origin: "bottom", scale: 0.9, duration: 2000 });
+        sr.reveal(".about-content", { delay: 500, distance: "30px" });
+
+        // --- SERVICES (Merge Kar Diya) ---
+        sr.reveal(".services-box", {
+            origin: "bottom", // Yahan merge kar diya
+            interval: 250,
+            distance: "40px",
+            scale: 0.98,
+        });
+
+        // --- EXPERIENCE ---
+        sr.reveal(".secondsection h1, .secondsection .text-gray", {
+            interval: 300,
+        });
+        sr.reveal(".secondsection", {
+            distance: '40px',
+            duration: 800,
+            easing: 'ease-out',
+            origin: 'bottom',
+            reset: false,
+        });
+
+        // Note: vertical-lines par interval tabhi kaam karega agar multiple lines hain
+        sr.reveal(".vertical-lines", { interval: 200, distance: "20px" });
+
+        // --- PROJECTS (Merge Kar Diya) ---
+        sr.reveal(".portfolio-box", {
+            origin: "bottom", // Yahan merge kar diya
+            interval: 200,
+            scale: 0.9,
+            rotate: { x: 5, y: 0, z: 0 },
+            duration: 1800,
+        });
+
+        // --- COURSES ---
+        sr.reveal(".course1 .card", { interval: 200, origin: "bottom" });
+
+        // --- CONTACT ---
+        sr.reveal(".contact h2", { origin: "top", distance: "20px" });
+        sr.reveal(".contact form", {
+            delay: 400,
+            distance: "40px",
+            origin: "bottom", // Form hamesha neeche se upar achha lagta hai
+        });
+
+        // --- FOOTER ---
+        sr.reveal(".footer-col", { interval: 150, distance: "10px" });
+        sr.reveal(".footer-bottom", {
+            origin: "bottom",
+            distance: "10px",
+            delay: 200,
+        });
+
+        sr.reveal('.project-card', {
+            distance: '60px',
+            duration: 900,
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            interval: 150,
+            origin: 'bottom',
+            reset: false
+        });
+
+    </script>
+
+    <!-- Hamburger  -->
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navRight = document.querySelector(".right");
+        hamburger.addEventListener("click", () => {
+            // icon change
+            navRight.classList.toggle("active");
+        });
+    </script>
+
+    <!-- Small script to set current year -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed("#element", {
+            strings: [
+                "Web Developer",
+                "Frontend Developer",
+                "SEO Expert",
+                "SQL Database Expert",
+                "Digital Marketer",
+                "Video Editor"
+            ],
+            typeSpeed: 60, // Likhte waqt ki speed (Thoda fast behtar hai)
+            backSpeed: 40, // Mitate (Erase) waqt ki speed
+            backDelay: 3000, // <--- AAPKI REQUIREMENT: Poora sentence likhne ke baad 3 sec ka intezar
+            startDelay: 500, // Shuru hone se pehle halka sa pause
+            loop: true, // <--- AAPKI REQUIREMENT: Hamesha chalta rahega
+            loopCount: Infinity, // Kabhi khatam nahi hoga
+            showCursor: true, // Cursor dikhayega
+            cursorChar: "|", // Modern cursor style
+            autoInsertCss: true, // Cursor blinking khud handle karega
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

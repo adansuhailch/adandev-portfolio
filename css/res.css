@@ -248,6 +248,7 @@ h3 {
   }
 
 }
+
 /* end of loading animation */
 
 .vertical-tittle {
@@ -1548,9 +1549,9 @@ body:not(.darkmode) .project-link:hover {
 }
 
 .footer-avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
+  width: 72px;
+  height: 98px;
+  border-radius: 20%;
   object-fit: cover;
   margin-bottom: 10px;
   border: 2px solid #1e2167;
@@ -1659,6 +1660,18 @@ body:not(.darkmode) .project-link:hover {
 .icon[aria-label="GitHub"]::after {
   background-color: #24292e;
 }
+
+/* discord */
+.icon[aria-label="Discord"]:hover,
+.icon[aria-label="Discord"]:focus,
+.icon[aria-label="Discord"]:active {
+  color: #5865F2;
+}
+
+.icon[aria-label="Discord"]::after {
+  background-color: #5865F2;
+}
+
 
 .icon[aria-label="Instagram"]:hover,
 .icon[aria-label="Instagram"]:focus,
